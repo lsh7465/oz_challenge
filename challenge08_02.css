@@ -1,0 +1,90 @@
+*{
+  margin: 0 auto;
+}
+
+#wrap{
+  border: 10px groove #C7F885;
+  width:1100px;
+  height: 1400px;
+  background-color: #C7F885;
+}
+
+
+.header{
+  border: 10px double #96C557;
+  margin-top: 50px; /*중앙정렬, 맨 밑에 붙이는 거 찾아보기*/
+  width:900px;
+  height: 90px;
+  background-color: #B3E078;
+}
+
+.header p{
+  font-size: 45px;
+  font-weight: bold;
+  color: #4D6C24;
+  text-align: center;
+  padding-top: 18px; /*다시 살펴보기*/
+}
+
+#main{
+  width: 800px;
+  height: 1000px;
+  margin-top: 60px;
+}
+.box01{
+  border: 10px double #96C557;
+  width: 700px;
+  height: 80px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #4D6C24;
+  text-align: right;
+}
+
+.box01_pos{
+  padding: 15px;
+}
+
+.box02{
+  border: 10px double #96C557;
+  width: 700px;
+  height: 400px;
+  margin-top: 60px;
+}
+
+.box02 img{
+  width: 500px;
+  height: 300px;
+  display: flex;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.box03 p{
+  text-align: center;
+}
+
+.box03{
+  border: 10px double #96C557;
+  width: 700px;
+  height: 400px;
+  margin-top: 60px;
+}
+
+.box03 p{
+  font-size: 18px;
+  font-weight: bold;
+  color: #4D6C24;
+  padding: 8px;
+}
+
+.box03_pos{
+  margin-top: 45px;
+}
+
+footer{
+  font-size: 40px;
+  font-weight: bolder;
+  margin-top: 30px;
+  text-align: center;
+}
