@@ -1,0 +1,63 @@
+*{
+  text-align: center;
+}
+
+html{
+ background-color: #fadedd; 
+ font-size: 16px;
+}
+
+body{
+  width: 640px;
+  margin: auto; /* 너비에서 남는 여백을 동일하게 분배 */
+  border: dotted 15px #efa5ac;
+  padding: 30px;
+}
+
+h1{
+  font-size: 60px;
+  font-family: 'Gowun Dodum', sans-serif;
+  font-family: 'Sunflower', sans-serif;
+}
+
+img{
+
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+}
+
+.line{ 
+  margin: auto;
+  margin-top: 60px;;
+  border: medium solid #000000;
+  width: 30px;
+}
+
+p{ 
+  font-size: 1.2rem;
+}
+
+
+#introduce{
+  margin-top: 90px;
+}
+
+.intro{
+  padding-top: 35px;
+}
+
+h2{
+  font-size: 30px;
+  font-family: 'Gowun Dodum', sans-serif;
+  font-family: 'Sunflower', sans-serif;
+}
+
+footer{
+margin: 20px;
+}
+
+#miniback{
+  background-color: #ffffff;
+  height: 470px;
+}
