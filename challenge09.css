@@ -23,7 +23,6 @@ html {
   width: 300px;
   height: 350px;
   background-color: #ffdfdf;
-
 }
 .box-left_text {
   text-align: center;
@@ -53,7 +52,7 @@ html {
 
 .box-right {
   display: inline-block;
-  vertical-align:top;
+  vertical-align: top;
   width: 1194px;
   height: 350px;
   background-color: #e5f7ff;
