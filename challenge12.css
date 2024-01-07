@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+  background-color: #f3f3f3;
+}
+li {
+  list-style: none;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1024px;
+  width: 100%;
+}
+.nav-list {
+  color: black;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 12px;
+  white-space: nowrap;
+  text-decoration-line: none;
+}
+
+.banner {
+  width: 100%;
+  height: 100px;
+  background-color: white;
+}
+.banner-wrap {
+  height: 100px;
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+}
+.more {
+  text-decoration-line: none;
+  color: #008dff;
+}
+.bn-front {
+  width: 20px;
+  height: 20px;
+  margin-left: 200px;
+  background-image: url(images/front.png);
+  background-repeat: no-repeat;
+}
+.bn-back {
+  width: 20px;
+  height: 20px;
+  margin-right: 200px;
+  background-image: url(images/back.png);
+  background-repeat: no-repeat;
+}
+
+
+.content01 {
+  width: 1300px;
+  height: 500px;
+  margin: 0 auto;
+}
+.p01 {
+  font-size: 40px;
+  font-weight: bold;
+  width: 500px;
+  height: 100px;
+  padding-top: 80px;
+}
+.menu-list {
+  height: 320px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.support {
+  width: 260px;
+  float: right;
+}
+.sp-picture {
+  float: right;
+}
+.write {
+  float: left;
+  font-weight: bold;
+  line-height: 25px;
+}
+.write a {
+  text-decoration-line: none;
+  color: #008dff;
+}
+.sp01,
+.sp02 {
+  float: left;
+  margin-top: 20px;
+}
+.sp-picture {
+  float: left;
+}
+.menu-list p {
+  font-size: 15px;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  white-space: nowrap;
+  padding-top: 20px;
+}
+
+
+.content02 {
+  width: 5000px;
+  margin-left: 100px;
+  float: left;
+  margin-bottom: 100px;
+}
+.content02 div{
+  float: left;
+}
+.subpic{
+  position: relative;
+}
+.imtext{
+  position: absolute;
+  top: 40px;
+  left: 30px;
+  line-height: 45px;
+  z-index: 1;
+  color: white;
+  font-size: 18px;
+}
+.subpic-wrap{
+  width: 400px;
+  height: 500px;
+}
+
+.content02 p {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.content02 img {
+  border-radius: 20px;
+  margin-top: 30px;
+  margin-right: 20px;
+  object-fit: cover;
+}
