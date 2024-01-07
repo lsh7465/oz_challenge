@@ -3,8 +3,8 @@
   padding: 0;
   margin: 0;
 }
-body{
-  background-color: #f3f3f3;
+body {
+  background-color: #fafafc;
 }
 li {
   list-style: none;
@@ -28,11 +28,11 @@ li {
 
 .banner {
   width: 100%;
-  height: 100px;
+  height: 90px;
   background-color: white;
 }
 .banner-wrap {
-  height: 100px;
+  height: 90px;
   font-size: 14px;
   display: flex;
   flex-direction: row;
@@ -58,7 +58,6 @@ li {
   background-image: url(images/back.png);
   background-repeat: no-repeat;
 }
-
 
 .content01 {
   width: 1300px;
@@ -112,20 +111,19 @@ li {
   padding-top: 20px;
 }
 
-
 .content02 {
   width: 5000px;
   margin-left: 100px;
   float: left;
   margin-bottom: 100px;
 }
-.content02 div{
+.content02 div {
   float: left;
 }
-.subpic{
+.subpic {
   position: relative;
 }
-.imtext{
+.imtext {
   position: absolute;
   top: 40px;
   left: 30px;
@@ -134,7 +132,7 @@ li {
   color: white;
   font-size: 18px;
 }
-.subpic-wrap{
+.subpic-wrap {
   width: 400px;
   height: 500px;
 }
