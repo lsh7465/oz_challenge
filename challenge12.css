@@ -134,6 +134,15 @@ li {
   color: white;
   font-size: 18px;
 }
+.subpic {
+  transition: all 0.2s linear;
+}
+.subpic:hover {
+  transform: scale(1.006);
+}
+.subpic img {
+  box-shadow: 2px 5px 10px 5px #ededed;
+}
 .subpic-wrap {
   width: 400px;
   height: 500px;
