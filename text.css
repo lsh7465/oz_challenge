@@ -2,6 +2,9 @@
   padding: 0;
   list-style-type: none;
 }
+.chat-screen {
+  overflow: scroll;
+}
 
 /* 상대 말풍선 */
 .chat-screen_texts > .text {
@@ -24,7 +27,6 @@
   top: 10px;
   left: -10px;
 }
-
 .chat-screen_texts > .text:hover {
   background-color: #50c6ff;
   transition: background-color 1500ms 200ms ease-in;
@@ -34,12 +36,7 @@
   transition: border-right 1500ms 200ms ease-in;
 }
 
-.chat-screen {
-  overflow: auto;
-}
-
 /* 본인 말풍선 */
-
 .chat-screen_texts > .text2 {
   background-color: white;
   width: 280px;
@@ -65,7 +62,7 @@
   background-color: #50c6ff;
   transition: background-color 1500ms 200ms ease-in;
 }
-.chat-screen_texts > .text2:hover::after {
-  border-right: 16px solid #50c6ff;
-  transition: border-right 1500ms 200ms ease-in;
+.chat-screen_texts > .text2:hover::before {
+  border-top: 16px solid #50c6ff;
+  transition: border-top 1500ms 200ms ease-in;
 }
