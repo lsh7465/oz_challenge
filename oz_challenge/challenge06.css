@@ -1,0 +1,25 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+
+  min-height: 100dvb;
+  background: linear-gradient(45deg, Violet, Orange);
+}
+
+
+#box{
+  border: 3px solid skyblue;
+  border-radius: 10px;
+  background-color: #ffffff;
+  font-size: 25px;
+  color: skyblue;
+  width: 150px;
+  height: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link href="ch04-form.css" rel="stylesheet">
+  <title>회원가입</title>
+</head>
+<body>
+  <div id="all">
+  <h1>OZ초격차 회원가입</h1>
+  <form id="form">
+    <div id="field">
+    <div class="email">
+    <input type="email" id="email" placeholder="이메일을 입력하세요."> 
+    </div> 
+    <div class="name">
+    <input type="name" id="name" placeholder="이름을 입력하세요.">
+    </div> 
+    <div class="password">
+    <input type="passwordCh" id="password" placeholder="비밀번호를 입력하세요.">
+    </div> 
+    <div class="passwordCh">
+    <input type="password" id="passwordCh" placeholder="비밀번호를 다시 입력하세요.">
+    </div> 
+    <input type="tel" id="number1" class="num" placeholder="010">-
+    <input type="tel" id="number2" class="num" placeholder="1234">-
+    <input type="tel" id="number3" class="num" placeholder="5678"> 
+    </div>
+
+    <div id="certification">
+    <div class="auth">
+      <div id="number4">000000</div>
+      <button type="button" onclick="getTaken()" id="num">인증번호 전송</button>
+    </div>
+    <div class="timer">
+      <div id="time">3:00</div>
+      <button type="button" onclick="checkCompletion()"
+       disabled>인증완료</button>
+    </div>
+    </div>
+
+    <div class="area">
+    <select id="area">
+      <option value="." disabled selected>-지역을 선택해주세요-</option>
+      <option value="a">서울</option>
+      <option value="b">경기</option>
+      <option value="c">인천</option>
+      <option value="d">전북</option>
+      <option value="e">부산</option>
+    </select>
+  </div>
+
+  <div class="gender">
+    <input type="radio" id="female" name="male">
+    여성
+    <input type="radio" id="male" name="male">
+    남성
+  </div>
+  
+  <div class="sign">
+    <button id="signUp">가입하기</button>
+  </div>
+  </div>  
+
+  </form>
+  <script>
+
+  var func = function(){
+
+    var email = document.getElementById('email').value;
+    var name = document.getElementById('name').value;
+    var password = document.getElementById('password').value;
+    var passwordch = document.getElementById('passwordCh').value;
+    var number1 = document.getElementById('number1').value;
+    var number2 = document.getElementById('number2').value;
+    var number3 = document.getElementById('number3').value;
+    
+    console.log(email);
+    console.log(name);
+    console.log(password);
+    console.log(passwordch);
+    console.log(number1);
+    console.log(number2);
+    console.log(number3);
+
+
+    alert('회원가입을 축하합니다');
+
+  }
+
+    signUp.addEventListener('click',func);
+
+  </script>
+</body>
+</html>

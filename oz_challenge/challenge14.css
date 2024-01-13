@@ -1,0 +1,44 @@
+.text {
+  margin: 350px auto;
+  width: 250px;
+  height: 40px;
+  white-space: nowrap;
+  position: relative;
+}
+p {
+  font-size: 25px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.text :nth-child(1) {
+  font-weight: bold;
+}
+
+@media screen and (min-width: 1100px) {
+  body {
+    background-color: #ff6969;
+  }
+}
+@media screen and (max-width: 1100px) {
+  body {
+    background-color: #ffd369;
+  }
+}
+@media screen and (max-width: 800px) {
+  body {
+    background-color: #5ea0ff;
+  }
+}
+@media screen and (max-width: 500px) {
+  body {
+    background-color: #875eff;
+  }
+}
+@media screen and (max-width: 350px) {
+  body {
+    background-color: #ff5ecd;
+  }
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>설문조사 양식</title>           
+</head>
+<body>
+  <header>
+    <h1>설문조사 양식</h1>
+    <p>모든 항목에 빠짐없이 체크해주십시오.</p>
+  </header>
+
+  <hr>
+  <main>
+    <form>
+
+      <fieldset>
+        <legend>개인정보</legend>
+        <label for="name">이름</label>
+        <input type="text" id="name" placeholder="본명을 입력하세요" name="name"> 
+        <br>
+        <label for="number">학번</label>
+        <input type="email" id="number" placeholder="학번을 쓰세요" name="number"> 
+      </fieldset>
+
+      <fieldset>
+        <legend>설문</legend>
+
+        <p>학급이 어떻게 되십니까?</p>
+        <input type="radio" id="one" name="age">
+        <label for="one">고1</label>
+        <input type="radio" id="two" name="age">
+        <label for="twenty">고2</label>
+        <input type="radio" id="three" name="age">
+        <label for="thirty">고3</label>
+        <input type="radio" id="other" name="age">
+        <label for="other">그 외</label>
+
+        <p>학식에 만족 하십니까?</p>
+        <input type="radio" id="bad" name="a">
+        <label for="bad">별로이다</label>
+        <input type="radio" id="nbad" name="a">
+        <label for="nbad">보통이다</label>
+        <input type="radio" id="good" name="a">
+        <label for="good">좋다</label>
+        <input type="radio" id="vgood" name="a">
+        <label for="vgood">매우 좋다</label>
+
+        <p>무엇이 별로인지 선택해주세요.</p>
+        <input type="checkbox" id="postion" name="b">
+        <label for="postion">간이 짜다</label>
+        <input type="checkbox" id="price" name="b">
+        <label for="price">간이 약하다</label>
+        <input type="checkbox" id="teacher" name="b">
+        <label for="teacher">양이 적다</label>
+        <input type="checkbox" id="infra" name="b">
+        <label for="infra">불친절하다</label>
+        <input type="checkbox" id="infra" name="b">
+        <label for="infra">위생문제</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>기타의견</legend>
+        <textarea rows="3" cols="30" name="commment"></textarea>
+      </fieldset>
+      <input type="submit">
+
+    </form> <!--form문에는 name속성을 추가해주는게 좋다.-->
+  </main>
+
+  <hr>
+  <footer>
+    <p>입력하느라 수고하셨습니다.</p>
+  </footer>
+
+
+</body>
+</html>

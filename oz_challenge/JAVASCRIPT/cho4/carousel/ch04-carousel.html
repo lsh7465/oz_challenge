@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <title>캐러셀</title>
+  </head>
+  <body>
+    <div style="overflow: hidden; width: 500px">
+      <div class="container">
+        <div class="inner">
+          <img src="images/bg-01.avif" alt="1" />
+        </div>
+        <div class="inner">
+          <img src="images/bg-02.jpeg" alt="2" />
+        </div>
+        <div class="inner">
+          <img src="images/bg-03.webp" alt="3" />
+        </div>
+      </div>
+    </div>
+
+    <button onclick="darkMode()">black</button>
+    <button class="btn1">화</button>
+    <button class="btn2">이</button>
+    <button class="btn3">팅</button>
+
+    <script>
+      function darkMode() {
+        var body = document.body;
+        body.classList.toggle("dark-mode");
+      }
+
+      document.querySelector(".btn1").addEventListener("click", function () {
+        document.querySelector(".container").style.transform = "translate(0vw)";
+      });
+      document.querySelector(".btn2").addEventListener("click", function () {
+        document.querySelector(".container").style.transform =
+          "translate(-100vw)";
+      });
+      document.querySelector(".btn3").addEventListener("click", function () {
+        document.querySelector(".container").style.transform =
+          "translate(-200vw)";
+      });
+    </script>
+  </body>
+</html>

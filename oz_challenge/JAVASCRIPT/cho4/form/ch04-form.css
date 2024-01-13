@@ -1,0 +1,113 @@
+* {
+  text-align: center;
+}
+
+body {
+  width: 500px;
+  margin: auto;
+}
+
+#all {
+  width: 500px;
+  height: 765px;
+  border-radius: 25px;
+  box-shadow: 7px 7px 0px 5px #18c561, 11px 11px 0 8px #e4e961,
+    17px 18px 0 10px #185b1b, 23px 25px 0 11px #d03761;
+  background-color: #defae4;
+}
+
+h1 {
+  padding-top: 70px;
+}
+
+form {
+  width: 500px;
+  height: 650px;
+  margin: auto;
+}
+
+#field input {
+  margin: 4px;
+  padding: 18px 25px 18px 2px;
+  width: 300px;
+  border-radius: 5px;
+  border: 2px solid #185b1b;
+  text-align: left;
+}
+
+#field .num {
+  width: 38px;
+  height: 10px;
+  margin-inline: 26px;
+}
+
+.email input {
+  width: 100%;
+}
+
+.name input {
+  width: 100%;
+}
+
+.password input {
+  width: 100%;
+}
+
+input::placeholder {
+  text-align: left;
+}
+
+#certification {
+  width: 425px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.auth {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 20px;
+}
+
+.timer {
+  display: flex;
+  justify-content: end;
+}
+
+.auth div {
+  width: 15%;
+  text-align: center;
+  font-weight: 700;
+  font-size: 13px;
+}
+.timer div {
+  width: 10%;
+  text-align: center;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+button {
+  width: 100px;
+}
+
+select {
+  width: 340px;
+  height: 50px;
+  padding-right: 180px;
+  border-radius: 5px;
+  border: 2px solid #185b1b;
+}
+
+.gender {
+  margin-top: 30px;
+}
+
+#signUp {
+  margin-top: 5px;
+  width: 340px;
+  height: 50px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 2px solid #185b1b;
+}
