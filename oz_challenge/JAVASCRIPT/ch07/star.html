@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>별 트리 찍기</title>
+  </head>
+  <body>
+    <script>
+      let head = document.createElement("h1");
+      head.innerHTML = "별 트리 찍기";
+      document.body.appendChild(head);
+
+      // 1번 별
+      let sub1 = document.createElement("h3");
+      sub1.innerHTML = "1번 별";
+      document.body.appendChild(sub1);
+      for (let i = 0; i < 5; i++) {
+        //줄
+        for (let j = 0; j <= i; j++) {
+          //별 갯수
+          document.write("*");
+        }
+        document.write("<br>");
+      }
+
+      document.write("<br>");
+
+      // 2번 별
+      let sub2 = document.createElement("h3");
+      sub2.innerHTML = "2번 별";
+      document.body.appendChild(sub2);
+      for (let i = 0; i < 5; i++) {
+        for (let j = 0; j <= i; j++) {
+          document.write("*");
+        }
+        document.write("<br>");
+      }
+      for (let i = 0; i < 5; i++) {
+        for (let j = 5; j > i; j--) {
+          document.write("*");
+        }
+        document.write("<br>");
+      }
+
+      document.write("<br>");
+
+      // 3번 별
+      let sub3 = document.createElement("h3");
+      sub3.innerHTML = "3번 별";
+      document.body.appendChild(sub3);
+      for (let i = 0; i < 5; i++) {
+        //줄의 수
+        for (let j = 4; j > i; j--) {
+          document.write("&nbsp"); //4번째 줄까지 space 됨
+        }
+        for (let j = 0; j <= i; j++) {
+          document.write("*");  //01234, 5줄 만들어짐
+        }
+        for (let j = 1; j <= i; j++) {
+          document.write("*");  //두번째 줄부터 별 증가
+        }
+        document.write("<br>");
+      }
+      for (let i = 0; i < 4; i++) {
+        for (let j = 0; j <= i; j++) {
+          document.write("&nbsp"); 
+        }
+        for (let j = 4; j > i; j--) {
+          document.write("*");  //4321
+        }
+        for (let j = 3; j > i; j--) {
+          document.write("*");  //321 3>0일떄 별3, 3>1일때 별2, 3>2일때 별1
+        }
+        document.write("<br>");
+      }
+    </script>
+  </body>
+</html>

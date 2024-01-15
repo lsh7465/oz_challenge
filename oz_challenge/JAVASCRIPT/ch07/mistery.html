@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미스테리 숫자 맞추기</title>
+    <style>
+      body {
+        text-align: center;
+        background-color: #484848;
+      }
+      h1,
+      h3 {
+        color: white;
+        margin-top: 80px;
+      }
+      .button-wrap {
+        display: flex;
+        justify-content: center;
+      }
+      .input,
+      #search {
+        margin: 5px;
+      }
+      .input {
+        width: 150px;
+        height: 40px;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 25px;
+      }
+
+      #search {
+        width: 100px;
+        height: 45px;
+        color: #ff8425;
+        border: 1px solid #ff8425;
+        border-radius: 5px;
+        background-color: #484848;
+      }
+      #search:hover {
+        transform: scale(1.1);
+        box-shadow: 0 3px 6px #ffac26;
+      }
+      .output {
+        margin: 30px;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+      }
+      #display {
+        color: white;
+        font-size: 20px;
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Mystery Number 맞추기</h1>
+    <h3>1부터 100사이의 숫자를 입력하세요!</h3>
+    <div class="button-wrap">
+      <input type="text" class="input" />
+      <button id="search" onclick="dot()">뚜둥!</button>
+    </div>
+    <div id="display"></div>
+
+    <script>
+      const count = 0;
+      const randomNumber = Math.floor(Math.random() * 100) + 1; //1부터 100사이의 무작위 수
+
+      document.querySelector(".input").onkeypress = function (e) {
+        //키보드 클릭해서 함수 실행
+        if (e.keyCode == 13) {
+          // enter 키인지 체크
+          dot(); // 함수 실행
+          return false; // keypress일 때 브라우저가 할 기본 동작 취소
+        }
+      };
+
+      function dot() {
+        var userNum = document.querySelector(".input").value;
+        if (userNum >= 1 && userNum <= 100) {
+          if (randomNumber > userNum) {
+            document.querySelector("#display").innerHTML =
+              "힌트: 숫자가 너무 작아요! 조금 더 높여보세요!";
+          } else if (randomNumber < userNum) {
+            document.querySelector("#display").innerHTML =
+              "힌트: 숫자가 너무 커요! 줄여볼까요?";
+          } else {
+            alert(`👏👏👏축하해요!!👏👏👏`);
+          }
+          document.querySelector(".input").value = "";
+        } else {
+          alert(`1과 100사이의 숫자를 입력하세요.`);
+        }
+      }
+
+  
+    </script>
+  </body>
+</html>
