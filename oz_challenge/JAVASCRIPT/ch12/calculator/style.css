@@ -1,0 +1,29 @@
+*{
+  box-sizing: border-box;
+}
+h1{
+  text-align: center;
+}
+.container{
+  margin: 0 auto;
+  background-color: #91DEFF;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 350px;
+  height: 330px;
+}
+.display{
+  width: 340px;
+  height: 50px;
+  margin: 4px;
+  margin-top: 15px;
+}
+.keypad{
+  text-align: center;
+  margin-top: 20px;
+}
+button{
+  width: 80px;
+  height: 45px;
+  margin-top: 10px;
+}

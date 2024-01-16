@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>계산기</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1>Click MyCalculator</h1>
+    <form class="container">
+      <input type="text" class="display" readonly /><!--읽기 전용-->
+      <div class="keypad">
+        <div>
+          <button onclick="btn(4)">7</button>
+          <button onclick="btn(5)">8</button>
+          <button onclick="btn(6)">9</button>
+          <button class="operator">x</button>
+        </div>
+        <div>
+          <button onclick="btn(4)">4</button>
+          <button onclick="btn(5)">5</button>
+          <button onclick="btn(6)">6</button>
+          <button class="operator">/</button>
+        </div>
+
+        <div>
+          <button onclick="btn(1)">1</button>
+          <button onclick="btn(2)">2</button>
+          <button onclick="btn(3)">3</button>
+          <button class="operator">-</button>
+        </div>
+        <div>
+          <button id="clear">C</button>
+          <button onclick="btn(0)">0</button>
+          <button class="operator">+</button>
+          <button id="result">=</button>
+        </div>
+      </div>
+    </form>
+
+    <script src="calculator.js"></script>
+  </body>
+</html>
