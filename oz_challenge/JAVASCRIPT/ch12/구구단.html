@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>구구단</title>
+  </head>
+  <body>
+    <script>
+      let h1 = document.createElement("h1");
+      h1.innerHTML = "구구단 표";
+      document.body.appendChild(h1);
+
+      let h3 = document.createElement("h3");
+      h3.innerHTML = "2단~9단을 만들어보세요!";
+      document.body.appendChild(h3);
+
+      document.write('<table border="1">');
+
+      // header
+      document.write("<thead>");
+      document.write("<tr>");
+      for (let i = 2; i <= 9; i++) {
+        document.write("<th>" + i + "단 </th>");
+      }
+      document.write("</tr>");
+      document.write("</thead>");
+
+      //body
+      document.write("<tbody>");
+      for (let i = 1; i <= 9; i++) {
+        //행
+        document.write("<tr>");
+        for (let j = 2; j <= 9; j++) {
+          //열
+          document.write("<td>" + j + "x" + i + "=" + i * j, "</td>");
+        }
+        document.write("</tr>");
+      }
+      document.write("</tbody>");
+    </script>
+  </body>
+</html>

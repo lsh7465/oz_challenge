@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>스톱워치</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>⏰스톱워치⏰</h1>
+      <p><span>경과시간: </span><span id="seconds">0</span>:<span id="tens">0</span></p>
+      <button id="btn-start">Start</button>
+      <button id="btn-stop">Stop</button>
+      <button id="btn-reset">reset</button>
+    </div>
+
+    <script>
+      const divTens = document.getElementById("tens");
+      const divSeconds = document.getElementById("seconds");
+      const btnStart = document.getElementById("btn-start");
+      const btnStop = document.getElementById("btn-stop");
+      const btnReset = document.getElementById("btn-reset");
+
+      let seconds = 0;
+      let tens = 0;
+      let Interval;
+
+        // Start
+      btnStart.onclick = function () {
+        // 기존에 있던 setInterval 없앰
+        clearInterval(Interval);
+
+        Interval = setInterval(startTimer, 10);
+        // setInterval(code, delay)
+        // startTimer은 함수를 만들어서 계속해서 반복/ delay는 밀리초 기준.
+      };
+
+      btnStop.onclick = function () {
+        // 이전에 설정된 시간 제한 반복 작업을 취소.
+        clearInterval(Interval);
+      
+      };
+      btnReset.onclick = function () {
+        // 이전에 설정된 시간 제한 반복 작업을 취소.
+        clearInterval(Interval);
+
+        seconds = 0;
+        tens = 0;
+
+        divSeconds.innerHTML = seconds;
+        divTens.innerHTML = tens;
+      };
+
+      function startTimer() {
+        tens++;
+
+        if (tens <= 9) {
+          divTens.innerHTML = tens;
+        }
+        if (tens > 9) {
+          divTens.innerHTML = tens;
+        }
+
+        // tens가 99보다 클 때
+        if (tens > 99) {
+          //  seconds 1 올리고
+          seconds++;
+          // divSeconds에도 반영하기
+          divSeconds.innerHTML = seconds;
+          // tens divTens 0으로
+          tens = 0;
+          divTens.innerHTML = 0;
+        }
+      }
+    </script>
+  </body>
+</html>

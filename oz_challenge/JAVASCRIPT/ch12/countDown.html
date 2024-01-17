@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>카운트 다운</title>
+  </head>
+  <body>
+    <p id="current-time"></p>
+    <p id="remain-time"></p>
+
+    <script>
+      const currentTime = document.querySelector("#current-time");
+      const remainTime = document.querySelector("#remain-time");
+
+      function countDown() {
+        const current = new Date();
+        current.setFullYear(2023, 11, 4);
+
+        const remain = new Date("12 31 2023 23:59:59:999");
+
+        const time = remain - current;
+
+        // Math.floor 함수를 이용해서 근접한 정수값을 가져온다.
+        // 밀리초 값이기 때문에 1000을 곱한다.
+        // 1000*60 => 60초(1분)*60 => 60분(1시간)*24 = 24시간(하루)
+        // 나머지 연산자(%)를 이용해서 시/분/초를 구한다.
+        const dDay = String(Math.floor(time / (1000 * 60 * 60 * 24)));
+        const dHour = String(Math.floor((time / (1000 * 60 * 60)) % 24));
+        const dMin = String(Math.floor((time / (1000 * 60)) % 60));
+        const dSec = String(Math.floor((time / 1000) % 60));
+
+        currentTime.innerText = `현재시간: ${current}`;
+        remainTime.innerText = `올해의 남은 시간: ${dDay}일 ${dHour}시간 ${dMin}분 ${dSec}초 남았습니다`;
+      }
+
+      countDown();
+      setInterval(countDown, 1000);
+    </script>
+  </body>
+</html>
