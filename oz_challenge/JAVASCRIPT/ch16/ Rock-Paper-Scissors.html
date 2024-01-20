@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rock Paper Scissor</title>
+    <title>Rock Paper Scissors</title>
   </head>
 
   <h1>가위바위보 게임</h1>
@@ -23,11 +23,11 @@
       function resultBtn() {
         let userChoice = document.getElementById("input_box").value;
 
-        const Scissor = "가위";
+        const Scissors = "가위";
         const Rock = "바위";
         const Paper = "보";
 
-        if (userChoice !== Scissor && userChoice !== Rock && userChoice !== Paper) {
+        if (userChoice !== Scissors && userChoice !== Rock && userChoice !== Paper) {
           alert("가위, 바위, 보 중 하나를 입력해야합니다!");
         } else {
 
@@ -36,7 +36,7 @@
           let rnd = Math.random();
 
           if (rnd < 0.33) {
-            computerChoice = Scissor;
+            computerChoice = Scissors;
           } else if (rnd < 0.66) {
             computerChoice = Rock;
           } else {
@@ -44,9 +44,9 @@
           }
 
           switch (userChoice) {
-            case Scissor:
+            case Scissors:
               switch (computerChoice) {
-                case Scissor:
+                case Scissors:
                   computerChoice = `${computerChoice} / 결과: 비겼습니다`;
                   break;
                 case Rock:
@@ -60,7 +60,7 @@
 
             case Rock:
               switch (computerChoice) {
-                case Scissor:
+                case Scissors:
                   computerChoice = `${computerChoice} / 결과: 이겼습니다`;
                   break;
                 case Rock:
@@ -71,10 +71,10 @@
                   break;
               }
               break;
-              
+
             default:
               switch (computerChoice) {
-                case Scissor:
+                case Scissors:
                   computerChoice = `${computerChoice} / 결과: 이겼습니다`;
                   break;
                 case Rock:
