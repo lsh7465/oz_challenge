@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>아이스크림 추가 및 나열</title>
+  </head>
+  <body>
+    <button id="add" onclick="iceAdd()">아이스크림 종류 추가</button>
+    <button id="show" onclick="iceShow()">아이스크림 이름 출력</button>
+    <button id="print" onclick="icePrint()">아이스크림 목록 출력</button>
+
+    <h2>입력한 아이스크림 목록:</h2>
+
+    <script>
+      //아이스크림 종류 추가, 아이스크림 이름 출력, 아이스크림 목록 출력
+      //Array push
+      //let question = prompt("추가하고싶은 아이스크림이 있습니까?")
+      //alert(아이스크림 종류)
+
+      let iceName;
+
+      function iceAdd() {
+        let question = prompt("추가하고싶은 아이스크림이 있습니까?");
+        iceName = new Array("메로나", "누가바", "돼지바");
+        iceName.push(question);
+
+        console.log(iceName);
+      }
+
+      function iceShow() {
+        for (let i = 0; i < iceName.length; ++i) {
+          alert(iceName[i]); // 배열의 원소를 출력합니다.
+        }
+      }
+
+      function icePrint() {
+        document.body.append(iceName);
+      }
+    </script>
+  </body>
+</html>

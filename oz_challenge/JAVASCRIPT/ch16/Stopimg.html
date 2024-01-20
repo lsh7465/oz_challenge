@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>이미지 멈추기</title>
+  </head>
+  <style>
+    .slide_wrap {
+      width: 500px;
+      overflow: hidden;
+    }
+    .slide_item {
+      width: 300px;
+      height: 300px;
+      float: left;
+    }
+
+    .slide_item.item1 {
+      background-image: url("images/1.jpeg");
+    }
+    .slide_item.item2 {
+      background-image: url("images/2.jpeg");
+    }
+    .slide_item.item3 {
+      background-image: url("images/3.jpg");
+    }
+    .slide_item.item4 {
+      background-image: url("images/4.jpeg");
+    }
+    .slide_item.item5 {
+      background-image: url("images/5.jpeg");
+    }
+  </style>
+  <body>
+    <div class="slide_wrap">
+      <div class="slide_item item1">1</div>
+      <div class="slide_item item2">2</div>
+      <div class="slide_item item3">3</div>
+      <div class="slide_item item4">4</div>
+      <div class="slide_item item5">5</div>
+    </div>
+    <button onclick="stop()">stop</button>
+
+    <script>
+      let firstIndex = 0;
+      let intervalId = setInterval(function autoSlide() {
+        let pics;
+        const img = document.querySelectorAll(".slide_item");
+        for (pics = 0; pics < img.length; pics++) {
+          img[pics].style.display = "none";
+        }
+        firstIndex++;
+        if (firstIndex > img.length) {
+          firstIndex = 1;
+        }
+        img[firstIndex - 1].style.display = "block";
+      }, 1000);
+
+      autoSlide();
+
+
+      function stop() {
+          clearInterval(intervalId);
+          toggle = false;
+      }
+    </script>
+  </body>
+</html>
