@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>성적표</title>
+  </head>
+  <style>
+    table,
+    td,
+    th {
+      border: 1px black solid;
+    }
+    td {
+      padding: 0 70px 0 70px;
+      font-size: 18px;
+      text-align: center;
+    }
+  </style>
+  <body>
+    <h1>떡잎 유치원 멀리뛰기 결과</h1>
+
+    <form action="">
+      <table>
+        <thead>
+          <tr>
+            <th>이름</th>
+            <th>점수</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>짱구</td>
+            <td>45</td>
+          </tr>
+          <tr>
+            <td>맹구</td>
+            <td>75</td>
+          </tr>
+          <tr>
+            <td>철수</td>
+            <td>95</td>
+          </tr>
+          <tr>
+            <td>훈이</td>
+            <td>50</td>
+          </tr>
+          <tr>
+            <td>유리</td>
+            <td>68</td>
+          </tr>
+          <tr>
+            <td>수지</td>
+            <td>86</td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+
+    <h2>75점이 넘는 사람:</h2>
+    <p id="pText">75점이 넘는 사람:</p>
+
+    <script>
+      const pText = document.querySelector("#pText");
+
+      const students = [
+        { name: "짱구", score: 45 },
+        { name: "맹구", score: 75 },
+        { name: "철수", score: 95 },
+        { name: "훈이", score: 50 },
+        { name: "유리", score: 68 },
+        { name: "수지", score: 86 },
+      ];
+      pText.textContent = students
+        .filter(({ score }) => score >= 75)
+        .sort((a, b) => b.score - a.score) //내림차순 정렬
+        .map(({ name }) => name)
+        .join(", ");
+
+      // const scores = [45, 75, 95, 50, 68, 86];
+      // scores.sort(function (a, b) {
+      //   //내림차순 정렬
+      //   return b - a;
+      // });
+      // const result = scores.filter((score) => score > 75); //95 ,86
+    </script>
+  </body>
+</html>

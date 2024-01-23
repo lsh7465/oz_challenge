@@ -17,36 +17,33 @@
       }
     </style>
   </head1>
-  <body>
-    <body id="body">
-      <p id="score"></p>
-
+  <body id="body">
+    <p id="score"></p>
 
     <script>
-
       //
-      let table = document.createElement('table');
-      let thead = document.createElement('thead');
-      let tbody = document.createElement('tbody');
+      let table = document.createElement("table");
+      let thead = document.createElement("thead");
+      let tbody = document.createElement("tbody");
 
       table.appendChild(thead);
       table.appendChild(tbody);
-      
-      document.getElementById('body').appendChild(table);
 
-      let row1 = document.createElement('tr');
-      let head1 = document.createElement('th');
-      head1.innerHTML = '점수';
-      let head2 = document.createElement('th');
-      head2.innerHTML = '90이상';
-      let head3 = document.createElement('th');
-      head3.innerHTML = '80~89점';
-      let head4 = document.createElement('th');
-      head4.innerHTML = '70~79점';
-      let head5 = document.createElement('th');
-      head5.innerHTML = '60~69점';
-      let head6 = document.createElement('th');
-      head6.innerHTML = '60점 미만';
+      document.getElementById("body").appendChild(table);
+
+      let row1 = document.createElement("tr");
+      let head1 = document.createElement("th");
+      head1.innerHTML = "점수";
+      let head2 = document.createElement("th");
+      head2.innerHTML = "90이상";
+      let head3 = document.createElement("th");
+      head3.innerHTML = "80~89점";
+      let head4 = document.createElement("th");
+      head4.innerHTML = "70~79점";
+      let head5 = document.createElement("th");
+      head5.innerHTML = "60~69점";
+      let head6 = document.createElement("th");
+      head6.innerHTML = "60점 미만";
 
       row1.appendChild(head1);
       row1.appendChild(head2);
@@ -57,20 +54,20 @@
       thead.appendChild(row1);
 
       //
-      let row2 = document.createElement('tr');
-      let row2_data_1 = document.createElement('td');
-      row2_data_1.innerHTML = '학점';
-      let row_2_data_2 = document.createElement('td');
-      row_2_data_2.innerHTML = 'A';
-      let row_2_data_3 = document.createElement('td');
-      row_2_data_3.innerHTML = 'B';
-      let row_2_data_4 = document.createElement('td');
-      row_2_data_4.innerHTML = 'C';
-      let row_2_data_5 = document.createElement('td');
-      row_2_data_5.innerHTML = 'D';
-      let row_2_data_6 = document.createElement('td');
-      row_2_data_6.innerHTML = 'F';
-      
+      let row2 = document.createElement("tr");
+      let row2_data_1 = document.createElement("td");
+      row2_data_1.innerHTML = "학점";
+      let row_2_data_2 = document.createElement("td");
+      row_2_data_2.innerHTML = "A";
+      let row_2_data_3 = document.createElement("td");
+      row_2_data_3.innerHTML = "B";
+      let row_2_data_4 = document.createElement("td");
+      row_2_data_4.innerHTML = "C";
+      let row_2_data_5 = document.createElement("td");
+      row_2_data_5.innerHTML = "D";
+      let row_2_data_6 = document.createElement("td");
+      row_2_data_6.innerHTML = "F";
+
       row2.appendChild(row2_data_1);
       row2.appendChild(row_2_data_2);
       row2.appendChild(row_2_data_3);
@@ -79,26 +76,28 @@
       row2.appendChild(row_2_data_6);
       tbody.appendChild(row2);
 
-
-      let score = prompt('중간고사 점수를 입력하세요.');
-      if(score >= 90){
-        let grade = 'A';
-        document.querySelector("#score").textContent = `나의 기말고사 점수는 ${score}입니다!` + `학점은 ${grade}!!!`;
-      } else if(score >= 80){
-        let grade = 'B';
-        document.querySelector("#score").textContent = `나의 기말고사 점수는 ${score}입니다!` + `학점은 ${grade}!!!`;
-      } else if(score >= 70){
-        let grade = 'C';
-        document.querySelector("#score").textContent = `나의 기말고사 점수는 ${score}입니다!` + `학점은 ${grade}!!!`;
-      } else if(score >= 60){
-        let grade = 'D';
-        document.querySelector("#score").textContent = `나의 기말고사 점수는 ${score}입니다!` + `학점은 ${grade}!!!`;
-      } else{
-        let grade = 'F';
-        document.querySelector("#score").textContent = `나의 기말고사 점수는 ${score}입니다!` + `학점은 ${grade}!!!`;
+      let score = prompt("중간고사 점수를 입력하세요.");
+      if (score >= 90) {
+        let grade = "A";
+        document.querySelector("#score").textContent =
+          `나의 기말고사 점수는 ${score}입니다!` + `학점은 ${grade}!!!`;
+      } else if (score >= 80) {
+        let grade = "B";
+        document.querySelector("#score").textContent =
+          `나의 기말고사 점수는 ${score}입니다!` + `학점은 ${grade}!!!`;
+      } else if (score >= 70) {
+        let grade = "C";
+        document.querySelector("#score").textContent =
+          `나의 기말고사 점수는 ${score}입니다!` + `학점은 ${grade}!!!`;
+      } else if (score >= 60) {
+        let grade = "D";
+        document.querySelector("#score").textContent =
+          `나의 기말고사 점수는 ${score}입니다!` + `학점은 ${grade}!!!`;
+      } else {
+        let grade = "F";
+        document.querySelector("#score").textContent =
+          `나의 기말고사 점수는 ${score}입니다!` + `학점은 ${grade}!!!`;
       }
-
-
     </script>
   </body>
 </html>
