@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="countdown-timer.css" />
+    <link rel="icon" href="./images/oz_icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lalezar&family=Monoton&family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+    <title>오즈코딩스쿨 | 카운트다운 타이머</title>
+  </head>
+  <body>
+    <div class="header">
+      <p style="font-size: 60px; color: #f9a14a">COUNT DOWN</p>
+      <p style="font-size: 135px">TIMER</p>
+    </div>
+    <div id="wrapper">
+      <div class="button-wrap">
+        <button id="newyears" onclick="showContent('A')">2025 새해</button>
+        <button id="halloween" onclick="showContent('B')">할로윈</button>
+        <button id="oz-tutorial" onclick="showContent('C')">오즈코딩스쿨 수료</button>
+        <button id="christmas" onclick="showContent('D')">크리스마스</button>
+      </div>
+      <div class="time-wrap">
+        <div class="time" id="timerA"></div>
+        <div class="time" id="timerB"></div>
+        <div class="time" id="timerC"></div>
+        <div class="time" id="timerD"></div>
+      </div>
+    </div>
+    <div class="footer">
+      © 2023. <a href="https://ozcodingschool.com/" target="_blank">ozcodingschool</a>. All rights
+      reserved. Developed by <a href="#">[이승현]</a>.
+    </div>
+
+    <script src="countdown-timer.js"></script>
+  </body>
+</html>
