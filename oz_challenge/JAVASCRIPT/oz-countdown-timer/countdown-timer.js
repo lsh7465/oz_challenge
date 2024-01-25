@@ -30,22 +30,10 @@ function showContent(content) {
       const secs = Math.floor((newYearsDiff % (1000 * 60)) / 1000);
 
       timerA.innerHTML =
-        "<div>" +
-        days +
-        "<span>Days</span>" +
-        "</div>" +
-        "<div>" +
-        hours +
-        "<span>Hours</span>" +
-        "</div>" +
-        "<div>" +
-        mins +
-        "<span>Minutes</span>" +
-        "</div>" +
-        "<div>" +
-        secs +
-        "<span>Seconds</span>" +
-        "</div>";
+        "<div>" + days + "<span>Days</span>" +"</div>" +
+        "<div>" + hours + "<span>Hours</span>" + "</div>" +
+        "<div>" + mins + "<span>Minutes</span>" + "</div>" +
+        "<div>" + secs + "<span>Seconds</span>" + "</div>";
     }, 1000);
   });
   // 할로윈 버튼
@@ -61,22 +49,10 @@ function showContent(content) {
       const secs = Math.floor((halloWeenDiff % (1000 * 60)) / 1000);
 
       timerB.innerHTML =
-        "<div>" +
-        days +
-        "<span>Days</span>" +
-        "</div>" +
-        "<div>" +
-        hours +
-        "<span>Hours</span>" +
-        "</div>" +
-        "<div>" +
-        mins +
-        "<span>Minutes</span>" +
-        "</div>" +
-        "<div>" +
-        secs +
-        "<span>Seconds</span>" +
-        "</div>";
+        "<div>" + days + "<span>Days</span>" +"</div>" +
+        "<div>" + hours + "<span>Hours</span>" + "</div>" +
+        "<div>" + mins + "<span>Minutes</span>" + "</div>" +
+        "<div>" + secs + "<span>Seconds</span>" + "</div>";
     }, 1000);
   });
   // 오즈 버튼
@@ -92,22 +68,10 @@ function showContent(content) {
       const secs = Math.floor((ozTutorialDiff % (1000 * 60)) / 1000);
 
       timerC.innerHTML =
-        "<div>" +
-        days +
-        "<span>Days</span>" +
-        "</div>" +
-        "<div>" +
-        hours +
-        "<span>Hours</span>" +
-        "</div>" +
-        "<div>" +
-        mins +
-        "<span>Minutes</span>" +
-        "</div>" +
-        "<div>" +
-        secs +
-        "<span>Seconds</span>" +
-        "</div>";
+        "<div>" + days + "<span>Days</span>" +"</div>" +
+        "<div>" + hours + "<span>Hours</span>" + "</div>" +
+        "<div>" + mins + "<span>Minutes</span>" + "</div>" +
+        "<div>" + secs + "<span>Seconds</span>" + "</div>";
     }, 1000);
   });
   // 크리스마스 버튼
@@ -123,22 +87,10 @@ function showContent(content) {
       const secs = Math.floor((christmasDiff % (1000 * 60)) / 1000);
 
       timerD.innerHTML =
-        "<div>" +
-        days +
-        "<span>Days</span>" +
-        "</div>" +
-        "<div>" +
-        hours +
-        "<span>Hours</span>" +
-        "</div>" +
-        "<div>" +
-        mins +
-        "<span>Minutes</span>" +
-        "</div>" +
-        "<div>" +
-        secs +
-        "<span>Seconds</span>" +
-        "</div>";
+        "<div>" + days + "<span>Days</span>" +"</div>" +
+        "<div>" + hours + "<span>Hours</span>" + "</div>" +
+        "<div>" + mins + "<span>Minutes</span>" + "</div>" +
+        "<div>" + secs + "<span>Seconds</span>" + "</div>";
     }, 1000);
   });
 
