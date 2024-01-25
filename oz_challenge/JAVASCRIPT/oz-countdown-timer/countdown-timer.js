@@ -19,7 +19,7 @@ const christmas = new Date(2024, 11, 25).getTime();
 function showContent(content) {
   // 2025 새해 버튼
   newYearsBtn.addEventListener("click", function () {
-    const a = setInterval(() => {
+    setInterval(() => {
       const now = new Date().getTime();
 
       const newYearsDiff = newYears - now;
@@ -38,7 +38,7 @@ function showContent(content) {
   });
   // 할로윈 버튼
   halloweenBtn.addEventListener("click", function () {
-    const b = setInterval(() => {
+     setInterval(() => {
       const now = new Date().getTime();
 
       const halloWeenDiff = halloWeen - now;
@@ -57,7 +57,7 @@ function showContent(content) {
   });
   // 오즈 버튼
   ozTutorialBtn.addEventListener("click", function () {
-    const c = setInterval(() => {
+    setInterval(() => {
       const now = new Date().getTime();
 
       const ozTutorialDiff = ozTutorial - now;
@@ -76,7 +76,7 @@ function showContent(content) {
   });
   // 크리스마스 버튼
   ozTutorialBtn.addEventListener("click", function () {
-    const d = setInterval(() => {
+    setInterval(() => {
       const now = new Date().getTime();
 
       const christmasDiff = christmas - now;
