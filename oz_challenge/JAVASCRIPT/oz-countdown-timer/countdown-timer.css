@@ -11,9 +11,16 @@ body {
 .header p {
   margin: 0;
 }
+.header-text1 {
+  font-size: 60px;
+  color: #f9a14a;
+}
+.header-text2 {
+  font-size: 135px;
+}
 
 #wrapper {
-  height: 400px;
+  height: 100%;
   margin-top: 80px;
 }
 .time-wrap {
@@ -21,28 +28,40 @@ body {
   justify-content: center;
   font-size: 3em;
   padding: 25px;
-  color: white;
+  color: 000000;
+  font-family: "Anton", sans-serif;
 }
 .button-wrap {
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 button {
-  width: 100px;
+  min-width: 100px;
   height: 100px;
+  border-style: none;
+  margin: 5px;
+  border-radius: 12px;
+  box-shadow: 0px 0px 20px 0px #636363;
+}
+button:hover {
+  transform: scale(0.9);
+  transition: 0.2s ease-in;
+  box-shadow: 0px 0px 20px 0px #f9a14a;
+}
+button:not(:hover) {
+  transition: 0.2s ease-out;
 }
 .time-wrap .time div {
   display: inline-block;
-  min-width: 90px;
-  background-color: #222222;
-  box-shadow: 0px 0px 15px 5px black inset;
+  min-width: 100px;
+  max-width: 80px;
+  background-color: #ffffff;
   padding: 28px;
   border-radius: 13px;
   margin: 15px;
   text-align: center;
 }
 .time-wrap .time span {
-  color: #ffffff;
+  color: #000000;
   display: block;
   margin-top: 15px;
   font-size: 0.35em;
@@ -53,8 +72,83 @@ button {
   font-size: 12px;
   text-align: center;
   color: #ffffff;
+  margin-top: 140px;
 }
 .footer a {
   color: hsl(282, 100%, 21%);
   text-decoration: none;
+}
+
+#newyears {
+  background-image: url(images/2025.png);
+  background-size: 100px;
+  background-color: #a5d1ea;
+}
+#halloween {
+  background-image: url(images/halloween.jpeg);
+  background-size: 100px;
+}
+#oz-tutorial {
+  background-image: url(images/oz_icon.png);
+  background-size: 100px;
+}
+#christmas {
+  background-image: url(images/christmas2.jpeg);
+  background-size: 100px;
+}
+
+@media screen and (max-width: 770px) {
+  /* 스타일 규칙 */
+
+  .time-wrap .time div {
+    font-size: 60px;
+  }
+}
+@media screen and (max-width: 400px) {
+  /* 스타일 규칙 */
+  .header {
+    line-height: 50px;
+  }
+  .header-text1 {
+    font-size: 40px;
+  }
+  .header-text2 {
+    font-size: 90px;
+  }
+}
+@media screen and (max-width: 270px) {
+  /* 스타일 규칙 */
+  .header {
+    line-height: 40px;
+  }
+  .header-text1 {
+    font-size: 35px;
+  }
+  .header-text2 {
+    font-size: 75px;
+  }
+}
+@media screen and (max-width: 240px) {
+  /* 스타일 규칙 */
+  .header {
+    line-height: 30px;
+  }
+  .header-text1 {
+    font-size: 25px;
+  }
+  .header-text2 {
+    font-size: 55px;
+  }
+}
+@media screen and (max-width: 180px) {
+  /* 스타일 규칙 */
+  .header {
+    line-height: 25px;
+  }
+  .header-text1 {
+    font-size: 20px;
+  }
+  .header-text2 {
+    font-size: 45px;
+  }
 }

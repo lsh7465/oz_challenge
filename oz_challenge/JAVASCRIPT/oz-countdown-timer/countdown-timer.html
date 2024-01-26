@@ -11,19 +11,22 @@
       href="https://fonts.googleapis.com/css2?family=Lalezar&family=Monoton&family=Russo+One&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <title>오즈코딩스쿨 | 카운트다운 타이머</title>
   </head>
   <body>
     <div class="header">
-      <p style="font-size: 60px; color: #f9a14a">COUNT DOWN</p>
-      <p style="font-size: 135px">TIMER</p>
+      <p class="header-text1">COUNT DOWN</p>
+      <p class="header-text2">TIMER</p>
     </div>
     <div id="wrapper">
       <div class="button-wrap">
-        <button id="newyears" onclick="showContent('A')">2025 새해</button>
-        <button id="halloween" onclick="showContent('B')">할로윈</button>
-        <button id="oz-tutorial" onclick="showContent('C')">오즈코딩스쿨 수료</button>
-        <button id="christmas" onclick="showContent('D')">크리스마스</button>
+        <button id="newyears" onclick="showContent('A')"></button>
+        <button id="halloween" onclick="showContent('B')"></button>
+        <button id="oz-tutorial" onclick="showContent('C')"></button>
+        <button id="christmas" onclick="showContent('D')"></button>
       </div>
       <div class="time-wrap">
         <div class="time" id="timerA"></div>
