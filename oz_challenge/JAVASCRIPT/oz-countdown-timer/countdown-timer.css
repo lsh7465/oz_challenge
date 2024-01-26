@@ -20,17 +20,10 @@ body {
 }
 
 #wrapper {
-  height: 100%;
+  height: auto;
   margin-top: 80px;
 }
-.time-wrap {
-  display: flex;
-  justify-content: center;
-  font-size: 3em;
-  padding: 25px;
-  color: 000000;
-  font-family: "Anton", sans-serif;
-}
+
 .button-wrap {
   text-align: center;
 }
@@ -50,15 +43,25 @@ button:hover {
 button:not(:hover) {
   transition: 0.2s ease-out;
 }
+.time-wrap {
+  display: flex;
+  justify-content: center;
+  font-size: 3em;
+  padding: 25px;
+  color: 000000;
+  font-family: "Anton", sans-serif;
+  margin: 0 auto;
+}
 .time-wrap .time div {
   display: inline-block;
+  text-align: center;
   min-width: 100px;
   max-width: 80px;
   background-color: #ffffff;
   padding: 28px;
   border-radius: 13px;
-  margin: 15px;
-  text-align: center;
+  vertical-align: middle; 
+  margin: 15px; 
 }
 .time-wrap .time span {
   color: #000000;
@@ -73,6 +76,8 @@ button:not(:hover) {
   text-align: center;
   color: #ffffff;
   margin-top: 140px;
+  position: relative;
+  transform: translateY(-100%);
 }
 .footer a {
   color: hsl(282, 100%, 21%);
@@ -130,6 +135,9 @@ button:not(:hover) {
 }
 @media screen and (max-width: 240px) {
   /* 스타일 규칙 */
+  .time-wrap .time div {
+    font-size: 1em;
+  }
   .header {
     line-height: 30px;
   }
@@ -142,6 +150,7 @@ button:not(:hover) {
 }
 @media screen and (max-width: 180px) {
   /* 스타일 규칙 */
+
   .header {
     line-height: 25px;
   }
