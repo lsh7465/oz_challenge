@@ -42,8 +42,7 @@ header a:last-child {
 
 /* 메인페이지 시작*/
 .main-page {
-  background-color: #fff;
-  padding-bottom: 30px;
+  height: 100vh;
 }
 #sound-onoff {
   padding-right: 20px;
