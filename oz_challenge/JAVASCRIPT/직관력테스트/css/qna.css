@@ -1,9 +1,6 @@
-.question-page {
-  display: none;
-}
-
 /* 질문 페이지 시작 */
 .question-page {
+  display: none;
   text-align: center;
   height: 100vh;
   max-width: 500px;
