@@ -300,4 +300,41 @@
 //   }, 100);
 // }
 
-// // ...
+// // ...\
+
+
+
+
+
+
+const answerBtn = document.querySelector(".answer-buttons");
+
+function addAnswer(answerText, qIdx) {
+  const answer = document.createElement("button");
+  answer.classList.add("answerList");
+  answerBtn.appendChild(answer);
+  answer.innerHTML = answerText;
+
+  answer.addEventListener("click", function () {
+    const children = document.querySelectorAll(".answerList");
+    for (let i = 0; i < children.length; i++) {
+      children[i].disabled = true;
+      children[i].style.display = "none"; //버튼 사라짐
+    }
+    clearNextTimeout();
+
+    totalScore +=
+      qnaList[qIdx].a.find((a) => a.answer === answerText).score * 10;
+
+    if (qIdx + 1 === endPoint) {
+      // 로딩 페이지로 이동
+      startImg();
+      goLoading();
+    } else {
+      // 다음 질문 페이지로 이동
+      goNext(++qIdx);
+    }
+  });
+}
+
+
