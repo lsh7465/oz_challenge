@@ -2,7 +2,7 @@
 // 큐: 선형 자료구조, FIFO (먼저 들오는 순서대로 처리)
 
 class GenericQueue<T> {
-  private items: T[] = [];
+  private items: T[] = [];.
 
   //enqueue 메서드 (큐를 데이터에 추가)
   enqueue(item: T): void {
