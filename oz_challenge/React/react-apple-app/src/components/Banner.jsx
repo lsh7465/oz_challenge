@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
 import axios from "../api/axios";
+import { useEffect, useState } from "react";
 import requests from "../api/requests";
 import "./Banner.css";
-import styled from "styled-components";
+import { styled } from "styled-components";
 
 const Banner = () => {
   const [movie, setMovie] = useState(null);
@@ -13,17 +13,20 @@ const Banner = () => {
   }, []);
 
   const fetchData = async () => {
-    // 현재 상영중인 영화 정보를 가져오기(여러 영화)
     const response = await axios.get(requests.fetchNowPlaying);
-    // 여러 영화 중 영화 하나의 ID를 가져오기
+    console.log(response);
+
     const movieId =
       response.data.results[
         Math.floor(Math.random() * response.data.results.length)
       ].id;
-    // 특정 영화의 더 상세한 정보를 가져오기(비디오 정보도 포함)
+
     const { data: movieDetail } = await axios.get(`movie/${movieId}`, {
-      params: { append_to_response: "videos" },
+      params: {
+        append_to_response: "videos",
+      },
     });
+    console.log("movieDetail", movieDetail);
     setMovie(movieDetail);
   };
 
@@ -32,14 +35,15 @@ const Banner = () => {
   };
 
   if (!movie) {
-    return <div>loading..</div>;
+    return <div>loading...</div>;
   }
+
   if (!isClicked) {
     return (
       <div
         className="banner"
         style={{
-          backgroundImage: `url("https://image.tmdb.org/t/p/original/${movie.backdrop_path})`,
+          backgroundImage: `url("https://image.tmdb.org/t/p/original${movie.backdrop_path}")`,
           backgroundPosition: "top center",
           backgroundSize: "cover",
         }}
@@ -60,7 +64,7 @@ const Banner = () => {
           </div>
           <p className="banner__description">{truncate(movie.overview, 100)}</p>
         </div>
-        <div className="banner--fadeBottom"></div>
+        <div className="banner--fadeBottom" />
       </div>
     );
   } else {
@@ -95,6 +99,7 @@ const Container = styled.div`
   width: 100%;
   height: 100vh;
 `;
+
 const HomeContainer = styled.div`
   width: 100%;
   height: 100%;
